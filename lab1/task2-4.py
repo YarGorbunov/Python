@@ -11,3 +11,7 @@ def check(string):
         if s[i-1] > s[i]:
             return False
     return True
+
+def countA(string):
+    return string.count('A')
+
