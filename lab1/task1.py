@@ -13,3 +13,12 @@ def func1(num):
         if flag:
             k+=1
     return k
+
+def func2(num):
+    s = 0
+    while num:
+        if (num % 10) % 3 == 0:
+            s += num % 10
+        num = int(num / 10)
+    return s
+
