@@ -15,3 +15,7 @@ def check(string):
 def countA(string):
     return string.count('A')
 
+def fileName(string):
+    l = string.split("/")
+    return l[len(l)-1].split(".")[0]
+
