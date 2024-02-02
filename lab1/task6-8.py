@@ -7,4 +7,9 @@ def findCharacters(string):
         if string.find(c) != -1: r.append(c)
     return r
 
-print(findCharacters("bdgxas"))
+def col(string):
+    r = []
+    for c in range_char("A", "z"):
+        if string.find(c) != -1: r.append(c)
+    return len(r)
+
