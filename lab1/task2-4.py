@@ -19,3 +19,14 @@ def fileName(string):
     l = string.split("/")
     return l[len(l)-1].split(".")[0]
 
+num = input("Enter task number: ")
+while True:
+    if (num not in ["0","1","2"]): 
+        num = input("Enter task number: ")
+    else: break
+
+string = input("Enter input string: ")
+
+if num == "0": print(check(string))
+elif num == "1": print(countA(string))
+else: print(fileName(string))
