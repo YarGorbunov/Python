@@ -6,6 +6,12 @@ def avgASCII(string):
         k += 1
     return s/k
 
-def sortASCII(l):
+def sort1(l):
     return sorted(l, key=avgASCII)
+
+def sort2(l):
+    a = avgASCII(l[0])
+    def keyFunc(string):
+        return (avgASCII(string) - a) ** 2
+    return sorted(l, key=keyFunc)
 
