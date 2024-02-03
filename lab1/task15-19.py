@@ -21,9 +21,17 @@ def func3(l):
         if i > first and i < last: k += 1
     return k
 
-def fun42(l, a, b):
+def func4(l, a, b):
     k = 0
     for i in l:
         if i >= a and i <= b:
             k += 1
     return k
+
+def func5(l1, l2):
+    l = []
+    for i in l1:
+        if i not in l2: l.append(i)
+    for i in l2:
+        if i not in l1: l.append(i)
+    return l
