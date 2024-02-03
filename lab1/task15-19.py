@@ -4,7 +4,7 @@ def func1(l):
 def func2(l, a, b):
     k = 0
     for i in l:
-        if i >= a and i <= b:
+        if i > a and i < b:
             k += 1
     return k
 
@@ -21,3 +21,9 @@ def func3(l):
         if i > first and i < last: k += 1
     return k
 
+def fun42(l, a, b):
+    k = 0
+    for i in l:
+        if i >= a and i <= b:
+            k += 1
+    return k
