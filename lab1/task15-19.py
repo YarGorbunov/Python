@@ -31,9 +31,9 @@ def func4(l, a, b):
 def func5(l1, l2):
     l = []
     for i in l1:
-        if i not in l2: l.append(i)
+        if i not in l2 and l1.count(i) == 1: l.append(i)
     for i in l2:
-        if i not in l1: l.append(i)
+        if i not in l1 and l2.count(i) == 1: l.append(i)
     return l
 
 num = input("Enter task number: ")
