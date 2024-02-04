@@ -35,3 +35,45 @@ def func5(l1, l2):
     for i in l2:
         if i not in l1: l.append(i)
     return l
+
+num = input("Enter task number: ")
+while True:
+    if (num not in ["0","1","2","3","4"]): 
+        num = input("Enter task number: ")
+    else: break
+
+if num in ["0","2"]:
+    l = []
+    s = input()
+    l.append(s)
+    while s != "": 
+        s = input()
+        if (s != ""): l.append(s)
+    if num == "0": print(func1(l))
+    else: print(func3(l))
+    exit()
+elif num in ["1","3"]:
+    l = []
+    s = input()
+    l.append(s)
+    while s != "": 
+        s = input()
+        if (s != ""): l.append(s)
+    a = input()
+    b = input()
+    if num == "1": print(func2(l, a, b))
+    else: print(func4(l, a, b))
+else:
+    l1 = []
+    s = input()
+    l1.append(s)
+    while s != "": 
+        s = input()
+        if (s != ""): l1.append(s)
+    l2 = []
+    s = input()
+    l2.append(s)
+    while s != "": 
+        s = input()
+        if (s != ""): l2.append(s)
+    print(func5(l1,l2))
