@@ -45,35 +45,35 @@ while True:
 if num in ["0","2"]:
     l = []
     s = input()
-    l.append(s)
+    l.append(int(s))
     while s != "": 
         s = input()
-        if (s != ""): l.append(s)
+        if (s != ""): l.append(int(s))
     if num == "0": print(func1(l))
     else: print(func3(l))
     exit()
 elif num in ["1","3"]:
     l = []
     s = input()
-    l.append(s)
+    l.append(int(s))
     while s != "": 
         s = input()
-        if (s != ""): l.append(s)
+        if (s != ""): l.append(int(s))
     a = input()
     b = input()
-    if num == "1": print(func2(l, a, b))
-    else: print(func4(l, a, b))
+    if num == "1": print(func2(l, int(a), int(b)))
+    else: print(func4(l, int(a), int(b)))
 else:
     l1 = []
     s = input()
-    l1.append(s)
+    l1.append(int(s))
     while s != "": 
         s = input()
-        if (s != ""): l1.append(s)
+        if (s != ""): l1.append(int(s))
     l2 = []
     s = input()
-    l2.append(s)
+    l2.append(int(s))
     while s != "": 
         s = input()
-        if (s != ""): l2.append(s)
+        if (s != ""): l2.append(int(s))
     print(func5(l1,l2))
