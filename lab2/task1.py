@@ -1,0 +1,1 @@
+def func1(l1,l2): return len(set(l1).intersection(set(l2)))
