@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+    <title>Music DB</title>
+    <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <button type="button" id="outputButton">Output</button>
+    <div id="outputTableDiv"></div>
+    <form action="cgi-bin/form_artist.py">
+        <input name="ar_name" placeholder="Artist name">
+        <input type="submit" value="Add to database">
+    </form>
+    <form action="cgi-bin/form_album.py">
+        <input name="al_name" placeholder="Album name">
+        <input name="al_year" placeholder="Creation year" type="number">
+        <input name="al_author" placeholder="Author id" type="number">
+        <input type="submit" value="Add to database">
+    </form>
+    <form action="cgi-bin/form_track.py">
+        <input name="tr_name" placeholder="Track name">
+        <input name="tr_album" placeholder="Album id" type="number">
+        <input type="submit" value="Add to database">
+    </form>
+    <form action="/cgi-bin/export.py">
+        <input name="table" placeholder="Table">
+        <input type="submit" value="Export table to XML">
+    </form>
+    <form action="/cgi-bin/import.py">
+        <textarea name="xml" rows=10 cols=40>
+Write your table in XML format.
+        </textarea><br>
+        <input type="submit" value="Import table from XML">
+    </form>
+</body>
